@@ -1,0 +1,21 @@
+.main{
+  background-image: url("../../assets/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  .buttons{
+    button{
+      width: 187px;
+      background-color: #FF9914;
+    }
+  }
+  input{
+    background-image: url("../../assets/Search.png");
+    background-repeat: no-repeat;
+    background-position: 14px 14px;
+    width: 400px;
+  }
+  input::placeholder{
+    color: #E7E8E6;
+  }
+}

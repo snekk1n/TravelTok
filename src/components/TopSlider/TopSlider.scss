@@ -1,0 +1,43 @@
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slick-slide {
+  position: relative;
+}
+
+.slick-slide img {
+  transition: transform 0.3s ease;
+  padding: 0 11px;
+}
+
+.slick-slide:not(.slick-center) .image-slide {
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.arrows {
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 50px;
+}
+
+.arrows.prev {
+  left: 10px;
+}
+
+.arrows.next {
+  right: 10px;
+}
+.arrow {
+  display: none;
+}
