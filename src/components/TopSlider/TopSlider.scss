@@ -19,16 +19,18 @@
 }
 
 .arrows {
+  margin-inline: 100px;
+  margin-top: 20px;
   color: #000000;
   position: absolute;
-  top: 50%;
+  top: 100%;
   transform: translateY(-50%);
-  z-index: 3;
-  background-color: transparent;
-  padding: 10px;
   border-radius: 50%;
+  padding: 12px;
+  padding-inline: 13px;
+  z-index: 3;
+  background-color: #9DA29966;
   cursor: pointer;
-  font-size: 50px;
 }
 
 .arrows.prev {
@@ -40,4 +42,22 @@
 }
 .arrow {
   display: none;
+}
+.slick-dots {
+  position: absolute;
+  bottom: -30px;
+  display: block !important;
+  width: 100%;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    margin: 0 5px;
+
+    button:before {
+      font-size: 20px; /* Увеличиваем размер точек */
+      color: grey;
+      opacity: 0.75;
+    }
+  }
 }

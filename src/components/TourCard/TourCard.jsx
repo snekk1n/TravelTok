@@ -3,14 +3,16 @@ import './TourCard.scss'
 import StarRating from "./StarRating.jsx";
 import Favorite from "./Favorite.jsx";
 import axios from 'axios';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import {useEffect, useState} from "react";
 
 const TourCard = () => {
     const [cars, setCars] = useState([]);
     useEffect(() => {
-        axios.get(`https://ash2521.pythonanywhere.com/index/`)
+        axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=3ffc3134c35fc52da915381e91b8adb4`)
             .then(response => {
-                setCars(response.data.cars);
+                setCars(response.data.results);
                 console.log(response.data);
             })
             .catch(error => {
@@ -27,10 +29,10 @@ const TourCard = () => {
                 <p className={'text-lg'}>прогулка верхом, музыкальное шоу и ночёвки в юрте Увидеть орлиную охоту,
                     погулять по берегу
                     Иссык-Куля и побывать в городе-призраке</p>
-                <p className={'text-lg mt-2'}><span className={'font-bold text-3xl'}>$320</span> за одного</p>
-                <div className={'flex items-center justify-between mt-3'}>
+                <p className={'text-sm mt-2'}><span className={'font-bold text-3xl'}>$320</span> групповой</p>
+                <div className={'flex items-end justify-between mt-3'}>
                     <Favorite/>
-                    <StarRating/>
+                    <div className={'flex items-end gap-2'}><StarRating/><span className={'text-sm font-semibold'}>4/5</span></div>
                     <span className={'text-sm font-semibold'}>5 дней</span>
                 </div>
             </div>
