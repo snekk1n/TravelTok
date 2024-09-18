@@ -1,5 +1,4 @@
 import cls from "./footer.module.scss"
-import Logo from './../../assets/Logo.png'
 import Facebook from './../../assets/facebook.png'
 import Linkedin from './../../assets/linkedin.png'
 import Whatsapp from './../../assets/whatsapp.png'
@@ -13,11 +12,11 @@ const Footer = () => {
             <div className={cls.container}>
                 <div className={"flex gap-14 justify-center"}>
                     <div className={cls.logo}>
-                            <div>
-                                <img className="w-24" src={Logo} alt="#"/>
-                            </div>
-                            <div  className={"pt-6"}>
-                                <p>
+                        <a href="#" className={'text-3xl font-bold'}>
+                            TravelTok
+                        </a>
+                        <div className={"pt-6"}>
+                            <p>
                                     Разработка программного
                                     обеспечения для вашего бизнеса. Внедрение и полное сопровождение, техническая
                                     поддержка.

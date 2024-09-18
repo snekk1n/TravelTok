@@ -26,7 +26,6 @@ const DataRegistration = () => {
         e.preventDefault();
         let hasErrors = false;
 
-        // Проверка длины пароля
         if (valueInp.pass.length < 6 || valueInp.pass2.length < 6) {
             setErrors((prev) => ({
                 ...prev,
@@ -40,7 +39,6 @@ const DataRegistration = () => {
             }));
         }
 
-        // Проверка совпадения паролей
         if (valueInp.pass !== valueInp.pass2) {
             setErrors((prev) => ({
                 ...prev,
@@ -54,7 +52,6 @@ const DataRegistration = () => {
             }));
         }
 
-        // Если ошибок нет, можно выполнять действия по регистрации
         if (!hasErrors) {
             console.log('Регистрация прошла успешно', { email: valueInp.email, password: valueInp.pass });
         }
@@ -88,9 +85,6 @@ const DataRegistration = () => {
                 />
                 {errors.passwordsDontMatch && <div className="text-red-500 text-xs">Пароли не совпадают</div>}
                 {errors.passLength && <div className="text-red-500 text-xs">Пароли не должны быть короче 6 символов</div>}
-            </div>
-            <div className="mt-5 text-blue-500 text-xs">
-                Забыли пароль?
             </div>
             <button type="submit" className={cls.register}>
                 Зарегистрироваться

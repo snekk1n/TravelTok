@@ -55,7 +55,7 @@ const TopSlider = () => {
     return (
         <>
             <div className={'flex flex-col items-center pt-10'}>
-                <h3 className={'text-3xl font-extrabold'}>Топ лучших туров</h3>
+                <h3 className={'text-3xl font-extrabold mt-10'}>Топ лучших туров</h3>
                 <p className={'text-lg pt-2'}>которые подарят вам лучшие воспоминания</p>
             </div>
 

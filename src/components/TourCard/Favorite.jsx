@@ -16,7 +16,7 @@ const SvgButton = () => {
                 fill={isActive ? 'currentColor' : 'none'}
                 stroke={isActive ? 'none' : 'gray'}
                 strokeWidth="2"
-                className={isActive ? 'text-orange-400' : 'text-gray-400'}
+                className={isActive ? 'text-red-600' : 'text-gray-400'}
                 xmlns="http://www.w3.org/2000/svg"
             >
                 <path

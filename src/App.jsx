@@ -3,21 +3,25 @@ import TopSlider from "./components/TopSlider/TopSlider.jsx";
 import TourCard from "./components/TourCard/TourCard.jsx";
 import Footer from "./components/footer/Footer.jsx";
 import Feedbacks from "./components/Feedbacks/Feedbacks.jsx";
-import "slick-carousel/slick/slick-theme.css";
-import Modal from 'react-modal';
-
-
+import FilterTour from "./components/FilterTour.jsx";
+import { Route, Routes } from 'react-router-dom';
+import TourDetail from "./components/TourDetail/TourDetail.jsx";
 
 const App = () => {
-    Modal.setAppElement('#root');
     return (
-        <div>
-            <Hero/>
-            <TopSlider/>
-            <TourCard/>
-            <Feedbacks/>
-            <Footer/>
-        </div>
+        <Routes>
+            <Route path="/" element={
+                <div className={'main'}>
+                    <Hero/>
+                    <TopSlider/>
+                    <FilterTour/>
+                    <TourCard/>
+                    <Feedbacks/>
+                    <Footer/>
+                </div>
+            } />
+            <Route path="/tour/:id" element={<TourDetail />} />
+        </Routes>
     );
 };
 
