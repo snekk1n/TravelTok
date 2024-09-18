@@ -1,0 +1,47 @@
+.container{
+  margin: 0 40px;
+
+  .solidBottom {
+    border-bottom: 2px solid #000;
+  }
+
+  .solidTransparent {
+    border-bottom: 2px solid transparent;
+  }
+}
+
+.reg:active{
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.email{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 58px;
+  border-bottom: 1px solid black;
+
+  input{
+    outline: none;
+    background-image: url("../../assets/mail2.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 19px;
+    width: 425px;
+    padding: 15px 45px;
+  }
+}
+
+.register{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  color: white;
+  background-color: #FF9914;
+  border-radius: 15px;
+  margin-top: 37px;
+  padding: 12px 128px;
+}
