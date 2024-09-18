@@ -4,7 +4,7 @@ import "./Hero.scss"
 const Hero = () => {
     return (
         <div className={'main text-white'}>
-            <Header/>
+            <Header svgColor="#fff" />
             <div className={"flex flex-col items-center gap-8 my-48"}>
                 <div className={'flex flex-col gap-5 items-center'}>
                     <h1 className={'tracking-wide text-5xl font-semibold'}>Авторские туры по всему Кыргызстану</h1>
