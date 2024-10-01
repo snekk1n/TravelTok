@@ -1,4 +1,5 @@
-import{ useState } from 'react';
+import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import cls from "./signIn.module.scss";
 import FirstPassword from "../PasswordInput/FirstPassword.jsx";
 
@@ -6,6 +7,7 @@ const SignIn = () => {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [errors, setErrors] = useState({});
+    const navigate = useNavigate(); // Для навигации между страницами
 
     const validate = () => {
         const validationErrors = {};
@@ -30,7 +32,7 @@ const SignIn = () => {
         const validationErrors = validate();
 
         if (Object.keys(validationErrors).length === 0) {
-            console.log('Форма отправлена', { email, password });
+            navigate('/profile'); // Перенаправление на страницу профиля
         } else {
             setErrors(validationErrors);
         }

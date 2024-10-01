@@ -63,7 +63,7 @@ const TopSlider = () => {
                 <Slider {...settings}>
                     {cars.map((car, index) => (
                         <div className="relative h-96">
-                            <img className="w-full h-full object-cover" src={img} alt="Image"/>
+                            <img className="w-full h-full rounded-lg" src={img} alt="Image"/>
                             <div className="absolute bottom-0 left-0 right-0 bg-gray-200 bg-opacity-50 mx-3 mb-14">
                                 <div className="text-black p-1 px-3">
                                     <h3 className="font-semibold">Выходные на берегах Иссык-Куля: древности, красные скалы, киргизская Швейцария и мастер-класс</h3>

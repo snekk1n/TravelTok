@@ -3,7 +3,7 @@ import img from '../../assets/image.png';
 import './TourCard.scss';
 import StarRating from "./StarRating.jsx";
 import Favorite from "./Favorite.jsx";
-import axios from 'axios';
+import axios from 'axios'
 import { useEffect, useState } from "react";
 
 const TourCard = () => {
@@ -25,7 +25,7 @@ const TourCard = () => {
             {cars.map((car, index) => (
                 <div className={'col-3 border-r-2 px-4 mb-16 flex flex-col justify-between'}>
                 <Link key={car.id} to={`/tour/${car.id}`}>
-                    <img src={img} alt=""/>
+                    <img className={'rounded-xl'} src={img} alt=""/>
                 </Link>
                     <h5 className={'text-lg font-semibold mt-2'}>Этноприключение в Киргизии:</h5>
                     <p className={'text-lg'}>прогулка верхом, музыкальное шоу и ночёвки в юрте Увидеть орлиную охоту,

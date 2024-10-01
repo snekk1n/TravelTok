@@ -6,6 +6,7 @@ import CustomDatePicker from "./CustomDatePicker.jsx";
 import Favorite from "../TourCard/Favorite.jsx";
 import Slider from "react-slick";
 import './TourDetail.scss'
+import Footer from "../footer/Footer.jsx";
 
 const TourDetail = () => {
     const { id } = useParams();
@@ -96,6 +97,58 @@ const TourDetail = () => {
                     <img className="w-full h-full object-cover" src={img} alt="Image"/>
                 ))}
             </Slider>
+            <div className="px-20 py-16 flex justify-between">
+                <div className={'w-5/12'}>
+                    <h3 className="text-orange-500 text-2xl font-bold mb-6">Включено в тур:</h3>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Экскурсии:</h5>
+                    <ul className="list-disc px-10">
+                        <li>Прогулка по берегу Иссык-Куля.</li>
+                        <li>Пешие экскурсии по горным тропам.</li>
+                        <li>Посещение термальных источников.</li>
+                        <li>Обзор древних петроглифов.</li>
+                    </ul>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Активности:</h5>
+                    <ul className="list-disc px-5">
+                        <li>Прогулка верхом: конные прогулки с инструкторами по горным тропам и долинам. Лошади
+                            предоставляются для туристов любого уровня подготовки.
+                        </li>
+                        <li>Треккинги и прогулки: пешие экскурсии по живописным маршрутам, включая посещение Иссык-Куля,
+                            горных долин и перевалов.
+                        </li>
+                    </ul>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Проживание:</h5>
+                    <ul className="list-disc px-5">
+                        <li>Удобные отели или гестхаусы на берегу Иссык-Куля.</li>
+                    </ul>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Питание:</h5>
+                    <ul className="list-disc px-5">
+                        <li>Завтраки, обеды и ужины, приготовленные из местных органических продуктов.</li>
+                    </ul>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Транспорт:</h5>
+                    <ul className="list-disc px-5">
+                        <li>Все передвижения по маршруту в рамках тура на комфортабельном микроавтобусе.</li>
+                    </ul>
+                    <h5 className={'text-orange-500 text-lg font-semibold'}>Услуги гида:</h5>
+                    <ul className="list-disc px-5">
+                        <li>Профессиональный гид, который расскажет о местной истории, культуре и природе.</li>
+                    </ul>
+                </div>
+                <div className={'w-5/12'}>
+                    <h3 className="text-orange-500 text-2xl font-bold mb-6">Не включено в тур:</h3>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Авиабилеты:</span> до и от места
+                        начала тура (например, до Бишкека).</h5>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Личные расходы:</span> сувениры,
+                        дополнительные закуски и напитки.</h5>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Медицинская страховка.</span></h5>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Дополнительные экскурсии или активности,</span> не
+                        указанные в основной программе.</h5>
+                    <h3 className="text-orange-500 text-2xl font-bold my-6">Дополнительная информация:</h3>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Маршрут:</span> Бишкек – Иссык-Куль - Иссык-Куль – Горные тропы - Иссык-Куль – Термальные источники - Иссык-Куль – Петроглифы</h5>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Продолжительность дороги:</span> 4-5 часов в одну сторону.</h5>
+                    <h5><span className={'text-orange-500 text-lg font-semibold'}>Сложность тура:</span> Легкий </h5>
+                </div>
+            </div>
+            <Footer/>
         </div>
     );
 };

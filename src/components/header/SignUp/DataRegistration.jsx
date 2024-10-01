@@ -1,4 +1,5 @@
 import React, { useCallback, useState } from 'react';
+import {useDispatch, useSelector} from "react-redux";
 import cls from "../modal.module.scss";
 import PasswordInput from "../PasswordInput/PasswordInput.jsx";
 import FirstPassword from "../PasswordInput/FirstPassword.jsx";
