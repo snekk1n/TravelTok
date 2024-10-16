@@ -3,7 +3,7 @@ import img from '../../assets/image.png';
 import './TourCard.scss';
 import StarRating from "./StarRating.jsx";
 import Favorite from "./Favorite.jsx";
-import axios from 'axios';
+import axios from 'axios'
 import { useEffect, useState } from "react";
 
 const TourCard = () => {

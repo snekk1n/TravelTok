@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
 import img from '../../assets/image.png';
-import Header from "../Header.jsx";
+import Header from "./../header/Header.jsx";
 import SetRatingStar from "./SetRatingStar.jsx";
 import CustomDatePicker from "./CalendarComponent.jsx";
 import Favorite from "../TourCard/Favorite.jsx";

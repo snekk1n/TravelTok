@@ -6,6 +6,7 @@ import Feedbacks from "./components/Feedbacks/Feedbacks.jsx";
 import FilterTour from "./components/FilterTour.jsx";
 import { Route, Routes } from 'react-router-dom';
 import TourDetail from "./components/TourDetail/TourDetail.jsx";
+import ProfileForm from "./components/ProfileForm/ProfileForm.jsx";
 
 const App = () => {
     return (
@@ -20,6 +21,7 @@ const App = () => {
                     <Footer/>
                 </div>
             } />
+            <Route path="/profile" element={<ProfileForm />} />
             <Route path="/tour/:id" element={<TourDetail />} />
         </Routes>
     );
