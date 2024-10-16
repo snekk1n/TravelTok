@@ -8,7 +8,7 @@ const DataRegistration = () => {
     const [valueInp, setValueInp] = useState({
         email: "",
         pass: "",
-        pass2: ""
+        pass2: "",
     });
     const [errors, setErrors] = useState({
         passwordsDontMatch: false,
@@ -75,14 +75,16 @@ const DataRegistration = () => {
                     value={valueInp.pass}
                     onChange={onChange}
                     minLength={6}
+                    placeholder={"Пароль"}
                 />
             </div>
             <div className={cls.pass}>
-                <PasswordInput
+                <FirstPassword
                     id="pass2"
                     value={valueInp.pass2}
                     onChange={onChange}
                     minLength={6}
+                    placeholder={"Подтвердите пароль"}
                 />
                 {errors.passwordsDontMatch && <div className="text-red-500 text-xs">Пароли не совпадают</div>}
                 {errors.passLength && <div className="text-red-500 text-xs">Пароли не должны быть короче 6 символов</div>}

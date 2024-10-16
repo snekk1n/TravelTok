@@ -3,6 +3,7 @@ import eyeIcon from '../../../assets/visibility.svg';
 import eyeOffIcon from '../../../assets/visibility_off.svg';
 import cls from './password.module.scss'
 
+
 const FirstPassword = (props) => {
     const [showPassword, setShowPassword] = useState(false);
 
@@ -15,7 +16,7 @@ const FirstPassword = (props) => {
             <div className={cls.pass}>
                 <input
                     {...props}
-                    placeholder="Пароль"
+
                     type={showPassword ? "text" : "password"}
                 />
                 <button type="button" onClick={togglePasswordVisibility} className="ml-2">
