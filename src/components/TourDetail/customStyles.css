@@ -1,0 +1,45 @@
+.react-datepicker__month {
+    display: block;
+}
+.react-datepicker{
+    border: none;
+}
+.react-datepicker__header,
+.react-datepicker__month-container{
+    background: #f6ecdf;
+    border: none;
+}
+.react-datepicker__day-name:first-letter{
+    text-transform: uppercase;
+}
+.react-datepicker__day-name{
+    width: 3rem;
+}
+.react-datepicker__week{
+    display: flex;
+}
+.normal-day,
+.today-day,
+.selected-day,
+.other-month-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem; /* Ширина ячейки */
+    height: 3rem; /* Высота ячейки */
+    border-radius: 50%;
+}
+
+.today-day {
+    border: 2px solid orange;
+    color: orange;
+}
+
+.selected-day {
+    background-color: orange;
+    color: white;
+}
+
+.other-month-day {
+    color: lightgray;
+}

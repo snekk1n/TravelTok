@@ -2,7 +2,7 @@ import { useParams } from 'react-router-dom';
 import img from '../../assets/image.png';
 import Header from "../Header.jsx";
 import SetRatingStar from "./SetRatingStar.jsx";
-import CustomDatePicker from "./CustomDatePicker.jsx";
+import CustomDatePicker from "./CalendarComponent.jsx";
 import Favorite from "../TourCard/Favorite.jsx";
 import Slider from "react-slick";
 import './TourDetail.scss'
@@ -74,7 +74,7 @@ const TourDetail = () => {
                             <Favorite/>
                         </div>
                     </div>
-                    <div className="w-1/3 flex flex-col gap-10">
+                    <div className="flex flex-col gap-10">
                         <div className="border-2 p-6 rounded-lg h-fit">
                         <h3 className="text-orange-500 text-2xl font-bold mb-6">Дополнительная информация</h3>
                         <ul className={'flex flex-col gap-4 mb-16'}>
