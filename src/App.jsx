@@ -7,6 +7,7 @@ import FilterTour from "./components/FilterTour.jsx";
 import { Route, Routes } from 'react-router-dom';
 import TourDetail from "./components/TourDetail/TourDetail.jsx";
 import ProfileForm from "./components/ProfileForm/ProfileForm.jsx";
+import AddTour from "./components/ProfileForm/MyOffice/AddTour.jsx";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
             } />
             <Route path="/profile" element={<ProfileForm />} />
             <Route path="/tour/:id" element={<TourDetail />} />
+            <Route path="/profile/AddTour" element={<AddTour />} />
         </Routes>
     );
 };
