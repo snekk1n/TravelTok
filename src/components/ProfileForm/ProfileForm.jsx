@@ -4,13 +4,10 @@ import Header from "../header/Header.jsx";
 const ProfileForm = () => {
     return (
         <>
-        <Header/>
+            <Header svgColor="#000"/>
         <div className="flex h-screen bg-gray-50">
-
-            <aside className="w-1/4 bg-green-100 p-6">
-
-                <h2 className="font-bold text-orange-500 mb-6">Личные данные</h2>
-               <SideBar/>
+            <aside className="w-1/5 bg-green-100 p-12 pt-16">
+               <SideBar textColor="#FF9914" aColor="#FF9914"/>
             </aside>
 
             <div className="flex-grow p-10">
